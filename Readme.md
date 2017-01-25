@@ -17,9 +17,6 @@ _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
 #### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/128374-technomart) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
 <img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391960/7a6d69bc-bdfc-11e5-907b-2d492ab975bc.jpg">
 
 Получится вот так:
