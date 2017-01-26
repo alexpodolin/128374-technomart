@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>HTML Academy: Техномарт Каталог товаров</title>
+	<title>HTML Academy: Техномарт Каталог товаров</title> 
 	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
@@ -13,14 +13,16 @@
 			<div class="menu-top-wrapper">
 				<a class="menu-top-logo" href="index.html">Техномарт</a>
 
-				<form id="menu-top-search" action="#" method="GET">					
+				<form id="menu-top-search" action="#" method="GET">			
+					<button type="submit" form="menu-top-search" class="menu-top-icon-search"></button>
+
 					<input type="search" id="menu-top-search-box" placeholder="Поиск:">
 					<label for="menu-top-search-box"></label>
 				</form>								
 
-				<a class="menu-top-bookmarks" href="#">Закладки: 0</a>			
-				<a class="menu-top-basket menu-top-basket-full" href="#">Корзина: 10</a>			
-				<a class="menu-top-order" href="#">Оформить заказ</a>
+				<a class="menu-top-bookmarks menu-top-icon-link" href="#">Закладки: 0</a>			
+				<a class="menu-top-basket menu-top-basket-full menu-top-icon-link" href="#">Корзина: 10</a>			
+				<a class="menu-top-order menu-top-order-active" href="#">Оформить заказ</a>
 			</div>
 		</div>
 
@@ -28,15 +30,16 @@
 			<div class="menu-bottom-wrapper">
 				
 				<div class="menu-bottom-middle">
-					<h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+					<h2 class="menu-bottom-middle-advertising">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
 
 					<div class="menu-bottom-middle-contacts">
-			            <p class="bottom-middle-contacts-phone">+7(812)555-05-55</p>
+			            <p class="bottom-middle-contacts-phone menu-top-icon-link">+7(812)555-05-55</p>
 			            <p class="bottom-middle-contacts-addr">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
 			        </div>			        
 
 			        <div class="menu-middle-account-logon">
 			            <a class="menu-middle-account-icon" href="#">Равшан Джамшутович</a>
+			            <a class="menu-middle-account-logout" href="#"></a>
 			            <a class="menu-middle-account-link" href="#">Мои заказы</a>
 			            <a class="menu-middle-account-link" href="#">Личный кабинет</a>
 			        </div>
@@ -136,19 +139,7 @@
 							</div>
 						</li>
 					</ul>
-				</div>
-
-				<div class="modal-add-product">
-					<button class="modal-popup-close" type="button"></button>
-
-					<div class="modal-add-product-icon"></div>
-					<span>Товар добавлен в корзину!</span>
-
-					<div class="modal-add-product-bottom">
-		      		    <a class="btn modal-add-product-continue" href="#">Оформить заказ</a>
-		      		    <a class="btn " href="#">Продолжить покупки</a>
-		      		</div>
-				</div>
+				</div>				
 
 				<div class="main-products-catalog">
 					<div class="main-products-catalog-item">
@@ -353,5 +344,17 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-add-product">
+		<button class="modal-popup-close" type="button"></button>
+
+		<div class="modal-add-product-icon"></div>
+		<span>Товар добавлен в корзину!</span>
+
+		<div class="modal-add-product-bottom">
+  		    <a class="btn modal-add-product-continue" href="#">Оформить заказ</a>
+  		    <a class="btn " href="#">Продолжить покупки</a>
+  		</div>
+	</div>
 </body>
 </html>

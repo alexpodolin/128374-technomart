@@ -13,14 +13,16 @@
 			<div class="menu-top-wrapper">
 				<a class="menu-top-logo" href="index.html">Техномарт</a>
 
-				<form id="menu-top-search" action="#" method="GET">					
+				<form id="menu-top-search" action="#" method="GET">			
+					<button type="submit" form="menu-top-search" class="menu-top-icon-search"></button>
+
 					<input type="search" id="menu-top-search-box" placeholder="Поиск:">
 					<label for="menu-top-search-box"></label>
 				</form>
 				
-				<a class="menu-top-bookmarks" href="#">Закладки: 0</a>			
-				<a class="menu-top-basket" href="#">Корзина: 0</a>			
-				<a class="menu-top-order" href="#">Оформить заказ</a>				
+				<a class="menu-top-bookmarks menu-top-icon-link" href="#">Закладки: 0</a>			
+				<a class="menu-top-basket menu-top-icon-link" href="#">Корзина: 0</a>			
+				<a class="menu-top-order menu-top-order-active" href="#">Оформить заказ</a>				
 			</div>
 		</div>
 
@@ -28,15 +30,15 @@
 			<div class="menu-bottom-wrapper">
 				
 				<div class="menu-bottom-middle">
-					<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+					<p class="menu-bottom-middle-advertising">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
 					<div class="menu-bottom-middle-contacts">
-			            <p class="bottom-middle-contacts-phone">+7(812)555-05-55</p>
+			            <p class="bottom-middle-contacts-phone menu-top-icon-link">+7(812)555-05-55</p>
 			            <p class="bottom-middle-contacts-addr">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
 			        </div>
 
 			        <div class="menu-bottom-middle-account">
-			        	<a class="bottom-middle-account-logon" href="#">Войти</a>
+			        	<a class="bottom-middle-account-logon menu-top-icon-link" href="#">Войти</a>
 			        	<a class="bottom-middle-account-registration" href="#">Регистрация</a>
 			        </div>
 				</div>
@@ -59,7 +61,7 @@
 	<main class="main">
 		<div class="main-wrapper">
 			<div class="main-promo-items">	
-				<div class="main-promo-item">
+				<div class="main-promo-item main-promo-item-flag">
 					<span>Материалы</span>
 					<a href=#>На любой вкус</a>
 				</div>
@@ -206,7 +208,7 @@
 				<h1>Сервисы</h1>
 				<p class="main-service-info">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-				<ul class="main-service-menu">
+				<!-- <ul class="main-service-menu">
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
 					<li><a href="#">Кредит</a></li>
@@ -215,6 +217,39 @@
 				<div class="main-service-delivery main-service-img">
 					<h1>Доставка</h1>
 					<p class="main-service-info">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+				</div> -->
+
+				<div class="main-service-block">
+					<input type="radio" id="block-1" class="main-service-block-hidden" checked>
+					<input type="radio" id="block-2" class="main-service-block-hidden">
+					<input type="radio" id="block-3" class="main-service-block-hidden">
+
+					<div class="main-service-toggle">
+						<label for="block-1">Доставка</label>
+						<label for="block-2">Гарантия</label>
+						<label for="block-3">Кредит</label>
+					</div>
+
+					<div class="main-service-block-slide">
+			            <div class="main-service-block-btn delivery">
+			            	<span>Доставка</span>
+			                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+			                <p class="delivery-additional-text">Ведь мы неплохо заработаем, поднимая его на ваш на этаж!</p>
+			            </div>
+
+			            <div class="main-service-block-btn guarantee">
+			                <span>Гарантия</span>
+			                <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его вогаранием,   вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+			                <p>Дом уж восстановите как нибудь сами.</p>
+			            </div>
+
+			            <div class="main-service-block-btn credit">
+			                <span>Кредит</span>
+			                <p>Залезть в долговую яму стало проще!</p>
+			                <p>Кредитные консультанты придут вам на помощь.</p>
+			                <a class="btn main-service-send-query" href="#">Отправить заявку</a>
+			            </div>
+			        </div>
 				</div>
 			</div>					
 		</section>
@@ -246,27 +281,7 @@
 			</div>
 		</section>
 
-		<div class="modal-email-popup">
-			<button class="modal-popup-close" type="button"></button>
-			<form id="email-popup-question" action="#" method="POST">
-				
-				<label for="email-popup-name">Ваше имя:</label>
-				<input type="text" id="email-popup-name" placeholder="Представьтесь, пожалуйста">
-
-				<label for="email-popup-email">Ваш e-mail:</label>
-				<input type="text" id="email-popup-email" placeholder="Для отправки ответа">
-
-				<label for="email-popup-letter">Текст письма:</label>
-				<textarea id="email-popup-letter" placeholder="В свободной форме"></textarea>
-
-				<div class=email-popup-submit><button type="submit" form="email-popup-question">Отправить</button></div>
-			</form>
-		</div>
-
-		<div class="modal-map-popup">
-			<button class="modal-popup-close" type="button"></button>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2970419182997!2d30.3220211441057!3d59.938877484047545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485281200649" width="940" height="448" allowfullscreen></iframe>
-		</div>
+		
 	</main>
 
 	<footer class="footer">
@@ -318,5 +333,28 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal-email-popup">
+		<button class="modal-popup-close" type="button"></button>
+		<form id="email-popup-question" action="#" method="POST">
+			
+			<label for="email-popup-name">Ваше имя:</label>
+			<input type="text" id="email-popup-name" placeholder="Представьтесь, пожалуйста">
+
+			<label for="email-popup-email">Ваш e-mail:</label>
+			<input type="text" id="email-popup-email" placeholder="Для отправки ответа">
+
+			<label for="email-popup-letter">Текст письма:</label>
+			<textarea id="email-popup-letter" placeholder="В свободной форме"></textarea>
+
+			<div class=email-popup-submit><button type="submit" form="email-popup-question">Отправить</button></div>
+		</form>
+	</div>
+
+	<div class="modal-map-popup">
+		<button class="modal-popup-close" type="button"></button>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2970419182997!2d30.3220211441057!3d59.938877484047545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485281200649" width="940" height="448" allowfullscreen></iframe>
+	</div>
+
 </body>
 </html>
