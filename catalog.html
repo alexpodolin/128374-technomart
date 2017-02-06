@@ -3,48 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт Каталог товаров</title> 
-	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">	
 </head>
 <body>
 
 	<header class="header">
 		<div class="header-menu-top">
 			<div class="menu-top-wrapper">
-				<a class="menu-top-logo" href="index.html">Техномарт</a>
+				<a class="btn menu-top-logo" href="index.html">Техномарт</a>
 
-				<form id="menu-top-search" action="#" method="GET">			
+				<form id="menu-top-search" class="menu-top-search" action="#" method="GET">			
 					<button type="submit" form="menu-top-search" class="menu-top-icon-search"></button>
 
-					<input type="search" id="menu-top-search-box" placeholder="Поиск:">
-					<label for="menu-top-search-box"></label>
+					<input type="search" id="menu-top-search-box" class="menu-top-search-box" placeholder="Поиск:">
+					<!-- <label for="menu-top-search-box"></label> -->
 				</form>								
 
-				<a class="menu-top-bookmarks menu-top-icon-link" href="#">Закладки: 0</a>			
-				<a class="menu-top-basket menu-top-basket-full menu-top-icon-link" href="#">Корзина: 10</a>			
-				<a class="menu-top-order menu-top-order-active" href="#">Оформить заказ</a>
+				<a class="menu-top-bookmarks" href="#">Закладки: 0</a>			
+				<a class="menu-top-basket menu-top-basket-full" href="#">Корзина: 10</a>			
+				<a class="menu-top-order" href="#">Оформить заказ</a>
 			</div>
 		</div>
 
 		<div class="header-menu-bottom">
 			<div class="menu-bottom-wrapper">
 				
-				<div class="menu-bottom-middle">
+				<div class="menu-bottom-middle clearfix">
 					<h2 class="menu-bottom-middle-advertising">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
 
 					<div class="menu-bottom-middle-contacts">
-			            <p class="bottom-middle-contacts-phone menu-top-icon-link">+7(812)555-05-55</p>
+			            <p class="bottom-middle-contacts-phone">+7(812)555-05-55</p>
 			            <p class="bottom-middle-contacts-addr">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
 			        </div>			        
 
-			        <div class="menu-middle-account-logon">
+			        <div class="menu-middle-account">
 			            <a class="menu-middle-account-icon" href="#">Равшан Джамшутович</a>
-			            <a class="menu-middle-account-logout" href="#"></a>
-			            <a class="menu-middle-account-link" href="#">Мои заказы</a>
-			            <a class="menu-middle-account-link" href="#">Личный кабинет</a>
+			            <div class="menu-middle-account-link">
+				            <a href="#">Мои заказы</a>
+				            <span class="menu-middle-account-dot"></span>
+				            <a href="#">Личный кабинет</a>
+			            </div>
 			        </div>
-
 				</div>
 
 				<nav class="menu-bottom-nav">
@@ -63,62 +65,63 @@
 	</header>
 
 	<main class="main">
-		<div class="main-wrapper">
+		<div class="main-wrapper clearfix">
 			<ul class="main-breadcrumbs">
 				<li><a href="">Каталог</a></li>
 				<li><a href="">Инструмент</a></li>
-				<li>Перфораторы</li>
+				<li><a>Перфораторы</a></li>
 			</ul>
 
 			<h1 class="main-calalog-header">Перфораторы</h1>
 
-			<form id="main-form-filter" action="#" method="GET">
+			<form id="main-form-filter" class="main-form-filter" action="#" method="GET">
 				<p class="main-topbar">Фильтр:</p>
 
 				<fieldset>
 				    <legend>Цена:</legend>	
 				    <div class="main-form-range">
 				    	<div class="main-form-scale">
-				    		<div class="main-form-scale-color"></div>
-				    	</div>
+				    		<div class="main-form-scale-color">
+				    			<div class="main-form-scale-green"></div>
+				    		</div>
 
-				    	<div class="main-form-btn-min"></div>
-				    	<div class="main-form-btn-max"></div>				    					    	
-				    </div>
+				    		<div class="main-form-btn-min"></div>
+				    		<div class="main-form-btn-max"></div>
+				    	</div>			    	
 
-				    <div class="main-form-price">
-			            <input class="main-form-price-min" type="text" value="0"> -
-			            <input class="main-form-price-max" type="text" value="30000">
-			        </div>			    
+				    	<div class="main-form-price">
+				            <input class="main-form-price-min" type="text" value="0"> <span>-</span>
+				            <input class="main-form-price-max" type="text" value="30000">
+				        </div>
+				    </div>				    			    
 				</fieldset>
 
 				<fieldset>
 				    <legend>Производители:</legend>	
 				    
-				    	<input type="checkbox" checked id="bosh">
+				    	<input type="checkbox" checked id="bosh"  name="vendor">
 						<label for="bosh">bosh</label>
 
-						<input type="checkbox" id="interskol">
+						<input type="checkbox" id="interskol" name="vendor">
 						<label for="interskol">интерскол</label>
 						
-						<input type="checkbox" checked id="makita">
+						<input type="checkbox" checked id="makita" name="vendor">
 						<label for="makita">makita</label>
 
-						<input type="checkbox" id="dewalt">
+						<input type="checkbox" id="dewalt" name="vendor">
 						<label for="dewalt">dewalt</label>
 
-						<input type="checkbox" id="hitachi">
+						<input type="checkbox" id="hitachi" name="vendor">
 						<label for="hitachi">hitachi</label>
-				    		 	    
 				</fieldset>
 
 				<fieldset>
 				    <legend>Питание:</legend>
 
-				    <input type="radio" id="main-form-battery">
+				    <input type="radio" checked id="main-form-battery" name="battery">
    					<label for="main-form-battery">Аккумуляторные</label>
 
-   					<input type="radio" id="main-form-network">
+   					<input type="radio" id="main-form-network" name="battery">
    					<label for="main-form-network">Сетевые</label> 
 				</fieldset>
 
@@ -126,17 +129,17 @@
 			</form>
 
 			<div class="main-catalog">
-				<div class="main-catalog-menu">
-					Сортировка:
+				<div class="main-catalog-menu clearfix">
+					<span class="main-catalog-menu-sort">Сортировка:</span>
 
 					<ul class="main-catalog-menu-header">
-						<li><span>По цене:</span></li>
+						<li><span class="main-catalog-menu-active" href="">По цене:</span></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По функционалу</a></li>
 						<li>
 							<div class="main-catalog-menu-sort">
-								<div class="menu-catalog-arrow-up menu-catalog-arrow-active"></div>
-								<div class="menu-catalog-arrow-down"></div>
+								<div class="menu-catalog-arrow menu-catalog-arrow-active"></div>
+								<div class="menu-catalog-arrow"></div>
 							</div>
 						</li>
 					</ul>
@@ -145,11 +148,11 @@
 				<div class="main-products-catalog">
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -160,11 +163,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -175,11 +178,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -189,11 +192,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -204,11 +207,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -219,11 +222,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -233,11 +236,11 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -247,12 +250,12 @@
 					</div>
 
 					<div class="main-products-catalog-item">
-						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-6000.jpg" width="144" height="128" alt="">
+						<div class="main-products-item-img ">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -262,12 +265,12 @@
 					</div>
 
 					<div class="main-products-catalog-item">
-						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="">
+						<div class="main-products-item-img ">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
 						</div>
 
 						<div class="main-products-item-menu">
-			            	<a class="main-products-item-buy" href="#">Купить</a> 
+			            	<a class="main-products-item-buy menu-products-buy-basket" href="#" onclick='addorder();'>Купить</a> 
 			            	<a class="main-products-item-bookmark" href="#">В закладки</a>
 			            </div>
 
@@ -289,22 +292,23 @@
 		</div>
 
 		<section class="main-about-product">
-			<div class="main-about-product-wrapper">			
-				<h2>Пара слов о перфораторах</h2>
-				<p class="main-service-info">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>			
+			<div class="main-about-product-wrapper clearfix">	
+				<h2 class="main-about-product-h2">Пара слов о перфораторах</h2>
+				<span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</span>
+				<p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>		
 			</div>
 		</section>				
 	</main>
 
 	<footer class="footer">
 		<div class="footer-top">
-			<div class="footer-top-wrapper">
+			<div class="footer-top-wrapper clearfix">
 				<div class="footer-top-addr">
-					<a class="menu-bottom-logo" href="index.html">Техномарт</a>
+					<a class="btn menu-bottom-logo" href="index.html">Техномарт</a>
 					<address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>+7(812)555-05-55</address>
 				</div>
 
-				<nav class="footer-bottom-site-nav">
+				<nav class="footer-top-site-nav">
 					<ul>						
 			            <li><a href="#">Компания</a></li>
 			            <li><a href="#">Новости</a></li>
@@ -314,7 +318,7 @@
 					</ul>
 				</nav>
 
-				<nav class="footer-bottom-shop-nav">
+				<nav class="footer-top-shop-nav">
 					<ul>						
 			            <li><a href="#">Материалы</a></li>
 			            <li><a href="#">Техника</a></li>
@@ -326,36 +330,40 @@
 		</div>
 
 		<div class="footer-bottom">
-			<div class="footer-bottom-wrapper">
-				<p>&copy; 2010-2017 Компания "Техномарт" <br> Все права защищены</p>
+			<div class="footer-bottom-wrapper clearfix">				
+				<p class="footer-bottom-copyright">&copy; 2010-2017 Компания "Техномарт" Все права защищены</p>
 
 				<div class="footer-bottom-social">
-					<a class="btn-social-vk" href="http://vk.com"></a>
-					<a class="btn-social-fb" href="http://facebook.com"></a>
-					<a class="btn-social-ig" href="http://instagram.com"></a>
+					<a class="btn-social btn-social-vk" href="http://vk.com"></a>
+					<a class="btn-social btn-social-fb" href="http://facebook.com"></a>
+					<a class="btn-social btn-social-ig" href="http://instagram.com"></a>
 				</div>
 
 				<p class="footer-bottom-feedback">Обратная связь: <br>
 					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 				</p>
 
-				<p class="footer-bottom-copyright">Разработано - <br>
+				<p class="footer-bottom-designed">Разработано - <br>
 					<a href="http://htmlacademy.ru">htmlacademy.ru</a>					
-				</p>
+				</p>				
 			</div>
 		</div>
 	</footer>
 
 	<div class="modal-add-product">
-		<button class="modal-popup-close" type="button"></button>
+		<button class="modal-popup-close" type="button" onclick='hideorder();'></button>
 
 		<div class="modal-add-product-icon"></div>
 		<span>Товар добавлен в корзину!</span>
 
 		<div class="modal-add-product-bottom">
-  		    <a class="btn modal-add-product-continue" href="#">Оформить заказ</a>
-  		    <a class="btn " href="#">Продолжить покупки</a>
+			<div class="modal-add-product-wrapper">
+	  		    <a class="btn modal-add-order" href="#">Оформить заказ</a>
+	  		    <a class="btn modal-add-continue" href="#">Продолжить покупки</a>
+  		    </div>
   		</div>
 	</div>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
