@@ -6,6 +6,8 @@ body {
   line-height: 18px;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1, h2  {
   font-size: 30px;
@@ -51,11 +53,12 @@ a {
 .header {
   width: 100%;
   font-size: 17px;
-  font-family: 'Cuprum';
+  font-family: "Cuprum", Arial, sans-serif;
 }
 .header-menu-top {
-  min-height: 42px;
-  background: #293449;
+  /*height: 42px;*/
+  background-color: #293449;
+  overflow: hidden;
 }
 .menu-top-wrapper {
   width: 940px;
@@ -84,11 +87,14 @@ a {
   background-color: transparent;
   font-size: 17px;
   line-height: 18px; 
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
 }
-.menu-top-search-box:hover { background-color: #212a3a; }
-.menu-top-search-box:active { background-color: #293449; }
-.menu-top-search-box:focus { background-color: #ffffff; }
+.menu-top-search label {
+  position: absolute;
+  top: 12px;
+  left: 47px;
+  background-color: transparent;
+}
 .menu-top-icon-search {
   position: absolute;
   top: 10px;
@@ -96,20 +102,30 @@ a {
   padding: 0;
   width: 20px;
   height: 20px;
-  opacity: 0.3;
+  /*opacity: 0.3;*/
   vertical-align: middle;
   border: 0;
-  background-color: #ffffff;   
   background: url("../img/icon-search.png") no-repeat;
 }
-.menu-top-icon-search:hover { 
-  background: url("../img/icon-search-hover.png") no-repeat; 
+
+.menu-top-search-box:hover, 
+.menu-top-search-box label { background-color: #212a3a; }
+.menu-top-search-box:active { background-color: #293449; }
+.menu-top-search-box:focus { background-color: #ffffff; }
+.menu-top-search-box:focus ~ label { display: none; }
+
+.menu-top-search-box:hover ~ button
+{
+  background: url("../img/icon-search-hover.png") no-repeat;
 }
-.menu-top-icon-search:focus  {
-  background: url("../img/icon-search-focus.png") no-repeat;
+.menu-top-search-box:focus ~ button
+{
+  background: url("../img/icon-search-active.png") no-repeat;
 }
+
+
 .menu-top-bookmarks {
-  padding: 10px 41px;
+  padding: 10px 32px 11px 40px;
   position: relative;
 }
 .menu-top-bookmarks:before {
@@ -123,13 +139,13 @@ a {
 }
 .menu-top-basket {
   position: relative;
-  padding: 13px 32px;
+  padding: 10px 30px 11px 40px;
 }
 .menu-top-basket:before  {
   content: '';
   position: absolute;
-  left: 0px;
-  top: 15px;
+  left: 8px;
+  top: 13px;
   width: 17px;
   height: 16px;
   background: url("../img/icon-basket.png") no-repeat;
@@ -159,7 +175,7 @@ a {
   float: left;
   width: 270px;
   position: relative;
-  margin: 3px 0 0 10px;  
+  margin: 2px 0 0 6px;  
 }
 .bottom-middle-contacts-phone {
   font-size: 21px;
@@ -169,6 +185,7 @@ a {
   border: 3px solid #ffffff;
   padding: 10px 15px 10px 34px;
   margin: 0;
+
 }
 .bottom-middle-contacts-phone:before {
   content: '';
@@ -189,14 +206,15 @@ a {
 .menu-top-order {
   float: right;
   background-color: #63a63e; 
-  padding: 12px 20px;    
-  line-height: 18px;}
+  padding: 12px 22px;    
+  line-height: 18px;
+}
 .menu-top-order:hover {
   background-color: #5fbb2d;  
 }
 .menu-top-order:active {
   background-color: #518534;
-  color: #b7c9af;
+  color: #b1c5a8;
 }
 .header-menu-bottom {
   background-color: #f1f5f7;
@@ -276,21 +294,27 @@ a {
 /*Страница каталога*/
 .menu-top-basket-catalog {
   position: relative;
-  padding: 13px 28px 12px 47px;
+  padding: 13px 28px 13px 47px;
 }
 .menu-top-basket-catalog:before  {
   content: '';
   position: absolute;
-  left: 17px;
+  left: 14px;
   top: 15px;
   width: 17px;
   height: 16px;
   background: url("../img/icon-basket.png") no-repeat;
 }
 .menu-top-basket-catalog:hover:before { background: url("../img/icon-basket-hover.png") no-repeat; }
+.menu-top-bookmarks-full {
+  padding: 10px 32px 13px 42px;
+}
 .menu-top-basket-full {
   background-color: #ee3643;
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 -7px;
+}
+.menu-top-order-full {
+  padding: 12px 20px;
 }
 .menu-middle-account {
   float: right;
@@ -545,7 +569,7 @@ opacity: .7;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: none;
   margin: 8px 0 0 0;
 }
@@ -584,7 +608,7 @@ opacity: .7;
 .main-products-catalog-item {
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Pt Sans'; 
+  font-family: "Pt Sans", Arial, sans-serif; 
   line-height: 20px;     
   text-align: center;
   width: 220px;
@@ -685,7 +709,7 @@ opacity: .7;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  font-family: 'Cuprum';
+  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
   border-radius: 3px;  
   border: 3px solid #63a63e;
@@ -762,7 +786,7 @@ opacity: .7;
 }
 .main-slider-wrapper-info {
   font-size: 13px;
-  font-family: Pt Sans;
+  font-family: "Pt Sans", Arial, sans-serif;
   line-height: 24px;
   margin: 0;
   width: 400px;
@@ -807,7 +831,7 @@ opacity: .7;
   color: #32425c;
 }
 .main-slider-wrapper-block-text p {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -817,7 +841,7 @@ opacity: .7;
   margin: 0;
   padding: 0;
   width: 190px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
@@ -914,9 +938,12 @@ opacity: .7;
 }
 .main-aboutus-detail p {
   margin: 0 0 22px 0;
-  font-family: 'Pt Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+.main-aboutus-detail p:nth-child(3n) { 
+  margin: 0;
 }
 .main-aboutus-detail p:last-child {
       margin: 0 0 23px 0;
@@ -958,7 +985,7 @@ opacity: .7;
 .main-aboutus-contacts p {
   width: 185px;
   margin: 0 0 31px 0;
-  font-family: 'Pt Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -981,10 +1008,10 @@ opacity: .7;
   display: inline-block;  
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans";  
+  font-family: "PT Sans", Arial, sans-serif; 
   text-decoration: none;
   text-transform: uppercase;
-  margin: 0 28px;
+  margin: 0 27px;
 }
 .main-breadcrumbs a { 
   color: #000000; 
@@ -999,7 +1026,7 @@ opacity: .7;
     background: url(../img/icon-home.png) no-repeat;
 }
 .main-breadcrumbs li:nth-child(2n) { 
-  margin: 0px 9px; 
+  margin: 0px 10px; 
   }
 .main-breadcrumbs li:first-child:before {
   content: '';
@@ -1033,7 +1060,7 @@ opacity: .7;
   background: #f2f6f8;  
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   color: #32425c;    
@@ -1042,7 +1069,7 @@ opacity: .7;
   float: left;
   width: 220px;
   position: relative;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 .main-form-filter p {  
@@ -1114,7 +1141,7 @@ opacity: .7;
   width: 94px;    
   font-size: 17px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: #f7f3ec;
   border: none;
   border-radius: 3px;
@@ -1128,7 +1155,7 @@ opacity: .7;
   width: 94px;
   font-size: 17px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: #f7f3ec;
   border: none;
   border-radius: 3px;
@@ -1140,7 +1167,7 @@ opacity: .7;
 .main-form-price span {
   font-size: 16px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .main-form-filter fieldset:not(:first-of-type) {
   margin: 15px 0 0 0;
@@ -1149,7 +1176,7 @@ opacity: .7;
 .main-form-filter label {
   font-size: 15px;
   line-height: 20px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .main-form-filter input[type="checkbox"] {
   display: none;
@@ -1201,7 +1228,7 @@ opacity: .7;
 .main-form-filter button {
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
@@ -1217,7 +1244,7 @@ opacity: .7;
 .main-catalog-menu {    
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   background: #f7f3ec;
   padding: 11px 16px;
@@ -1226,7 +1253,7 @@ opacity: .7;
 .main-catalog-menu-sort {    
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   margin: 0 0 0 5px;
 }
@@ -1288,7 +1315,7 @@ opacity: .7;
   padding: 45px 0 0 0;
   font-size: 13px;
   line-height: 18px;
-  font-family: "Pt Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 .main-catalog-paginator ul {
   margin: 0;
@@ -1306,7 +1333,7 @@ opacity: .7;
   color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 10px 16px;
 }
 .main-catalog-paginator li a {
   padding: 10px 17px;
@@ -1339,7 +1366,7 @@ opacity: .7;
   text-transform: uppercase;
 }
 .main-about-product-wrapper {
-  font-family: 'Pt Sans';
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1385,6 +1412,9 @@ opacity: .7;
   line-height: 24px;
   font-style: normal;    
 }
+.footer-top-addr address p {
+  margin: 0;
+}
 .footer-top-site-nav {
   float: right;
   width: 570px;  
@@ -1396,7 +1426,7 @@ opacity: .7;
   padding: 0 0 0 57px;
 }
 .footer-top-site-nav li:first-child { padding: 0; }
-.footer-top-site-nav li:last-child { padding: 0 0 0 53px; }
+.footer-top-site-nav li:last-child { padding: 0 0 0 52px; }
 .footer-top-site-nav a {
   font-size: 18px;
   line-height: 24px;
@@ -1417,7 +1447,7 @@ opacity: .7;
 .footer-top-shop-nav li {
   list-style: none;
   display: inline-block;
-  padding: 0 0 0 56px;
+  padding: 0 0 0 55px;
 }
 .footer-top-shop-nav li:first-child { padding: 0; }
 .footer-top-shop-nav a {
@@ -1561,7 +1591,7 @@ opacity: .7;
   padding: 9px 49px 9px 15px;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #999999;
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -1572,7 +1602,7 @@ opacity: .7;
 .modal-email-popup textarea {
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #999999;  
   margin: 0 0 24px 0;
   padding: 8px 0 0 12px;
@@ -1592,6 +1622,9 @@ opacity: .7;
 /*--------------------------------------------------------------------*/
 .modal-map-popup {
   display: none;
+}
+.modal-map-popup-show {
+  display: block;
 }
 
 .modal-map-popup, iframe {
@@ -1614,7 +1647,7 @@ opacity: .7;
   content: '';
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: -25px;
   width: 20px;
   height: 5px;
   background: #ee3643;
@@ -1626,7 +1659,7 @@ opacity: .7;
   content: '';
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: -25px;
   width: 20px;
   height: 5px;
   background: #ee3643;
