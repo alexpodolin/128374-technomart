@@ -1048,7 +1048,7 @@ opacity: .7;
 .main-breadcrumbs li:first-child:before {
   content: '';
   position: absolute;
-  left: -1;
+  left: -1px;
   top: 2px;
   width: 8px;
   height: 12px;
@@ -1443,7 +1443,7 @@ opacity: .7;
   padding: 0 0 0 57px;
 }
 .footer-top-site-nav li:first-child { padding: 0; }
-.footer-top-site-nav li:last-child { padding: 0 0 0 52px; }
+.footer-top-site-nav li:last-child { padding: 0 0 0 49px; }
 .footer-top-site-nav a {
   font-size: 18px;
   line-height: 24px;
@@ -1464,7 +1464,7 @@ opacity: .7;
 .footer-top-shop-nav li {
   list-style: none;
   display: inline-block;
-  padding: 0 0 0 55px;
+  padding: 0 0 0 54px;
 }
 .footer-top-shop-nav li:first-child { padding: 0; }
 .footer-top-shop-nav a {
