@@ -57,4 +57,5 @@
     url("../fonts/PTSansNarrowBold/PTSansNarrowBold.woff") format("woff"),
     url("../fonts/PTSansNarrowBold/PTSansNarrowBold.ttf") format("truetype");
     font-style: normal;
-    fon
+    font-weight: normal;
+}
