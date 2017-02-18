@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт Каталог товаров</title> 
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/normalize.css" rel="stylesheet">	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link href="css/fonts.css" rel="stylesheet">	
+	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/normalize.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,15 +16,14 @@
 				<a class="btn menu-top-logo" href="index.html">Техномарт</a>
 
 				<form id="menu-top-search" class="menu-top-search" action="#" method="GET">			
+					<input type="search" id="menu-top-search-box" class="menu-top-search-box">
+					<label for="menu-top-search-box">Поиск:</label>
 					<button type="submit" form="menu-top-search" class="menu-top-icon-search"></button>
-
-					<input type="search" id="menu-top-search-box" class="menu-top-search-box" placeholder="Поиск:">
-					<!-- <label for="menu-top-search-box"></label> -->
 				</form>								
 
-				<a class="menu-top-bookmarks" href="#">Закладки: 0</a>			
+				<a class="menu-top-bookmarks menu-top-bookmarks-full" href="#">Закладки: 0</a>			
 				<a class="menu-top-basket-catalog menu-top-basket-full" href="#">Корзина: 10</a>			
-				<a class="menu-top-order" href="#">Оформить заказ</a>
+				<a class="menu-top-order menu-top-order-full" href="#">Оформить заказ</a>
 			</div>
 		</div>
 
@@ -32,7 +31,7 @@
 			<div class="menu-bottom-wrapper">
 				
 				<div class="menu-bottom-middle clearfix">
-					<h2 class="menu-bottom-middle-advertising">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+					<p class="menu-bottom-middle-advertising">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
 					<div class="menu-bottom-middle-contacts">
 			            <p class="bottom-middle-contacts-phone">+7 (812) 555-05-55</p>
@@ -53,7 +52,7 @@
 					<ul>
 						<li><a href="index.html">Главная</a></li>
 			            <li><a href="#">Компания</a></li>
-			            <li><a href="#">Каталог</a></li>
+			            <li><a href="catalog.html">Каталог</a></li>
 			            <li><a href="#">Новости</a></li>
 			            <li><a href="#">Спецпредложения</a></li>
 			            <li><a href="#">Доставка</a></li>
@@ -133,7 +132,7 @@
 					<span class="main-catalog-menu-sort">Сортировка:</span>
 
 					<ul class="main-catalog-menu-header">
-						<li><span class="main-catalog-menu-active" href="">По цене:</span></li>
+						<li>По цене:</li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По функционалу</a></li>
 						<li>
@@ -148,7 +147,7 @@
 				<div class="main-products-catalog">
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="bosch-bfg-3000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -163,7 +162,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="bosch-bfg-6000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -178,7 +177,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="bosch-bfg-2000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -192,7 +191,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="bosch-bfg-3000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -207,7 +206,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="bosch-bfg-6000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -222,7 +221,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img">
-							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="bosch-bfg-2000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -236,7 +235,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img main-products-item-new">
-							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-3000.jpg" width="184" height="164" alt="bosch-bfg-3000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -251,7 +250,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img ">
-							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-6000.jpg" width="184" height="164" alt="bosch-bfg-6000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -266,7 +265,7 @@
 
 					<div class="main-products-catalog-item">
 						<div class="main-products-item-img ">
-							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="">
+							<img src="img/bosch-bfg-2000.jpg" width="184" height="164" alt="bosch-bfg-2000">
 						</div>
 
 						<div class="main-products-item-menu">
@@ -292,7 +291,7 @@
 		</div>
 
 		<section class="main-about-product">
-			<div class="main-about-product-wrapper clearfix">	
+			<div class="main-about-product-wrapper clearfix">
 				<h2 class="main-about-product-h2">Пара слов о перфораторах</h2>
 				<span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</span>
 				<p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>		
@@ -305,14 +304,14 @@
 			<div class="footer-top-wrapper clearfix">
 				<div class="footer-top-addr">
 					<a class="btn menu-bottom-logo" href="index.html">Техномарт</a>
-					<address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br>+7 (812) 555-05-55</address>
+					<address><p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p><p>+7 (812) 555-05-55</p></address>
 				</div>
 
 				<nav class="footer-top-site-nav">
 					<ul>						
 			            <li><a href="#">Компания</a></li>
 			            <li><a href="#">Новости</a></li>
-			            <li><a href="#">Каталог</a></li>
+			            <li><a href="catalog.html">Каталог</a></li>
 			            <li><a href="#">Доставка</a></li>
 			            <li><a href="#">Контакты</a></li>
 					</ul>
@@ -339,11 +338,11 @@
 					<a class="btn-social btn-social-ig" href="http://instagram.com"></a>
 				</div>
 
-				<p class="footer-bottom-feedback">Обратная связь: <br>
+				<p class="footer-bottom-feedback">Обратная связь:
 					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 				</p>
 
-				<p class="footer-bottom-designed">Разработано - <br>
+				<p class="footer-bottom-designed">Разработано -
 					<a href="http://htmlacademy.ru">htmlacademy.ru</a>					
 				</p>				
 			</div>
