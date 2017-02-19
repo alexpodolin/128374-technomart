@@ -22,6 +22,7 @@ function hidemap() {
 function addorder() {
 	document.getElementsByClassName("modal-add-product")[0].style.display = "block";
 }
+
 //скрыть окно добавления заказа
 function hideorder() {
 	document.getElementsByClassName("modal-add-product")[0].style.display = "none";
