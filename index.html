@@ -3,8 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">	
+<<<<<<< HEAD
 	<link href="css/style.min.css" rel="stylesheet">	
+=======
+	<link href="css/style.css" rel="stylesheet">	
+>>>>>>> refs/remotes/128374-technomart/master
 	<link href="css/normalize.min.css" rel="stylesheet">
 </head>
 <body>
@@ -24,10 +29,8 @@
 				<a class="menu-top-bookmarks" href="#">Закладки: 0</a>			
 				<a class="menu-top-basket" href="#">Корзина: 0</a>			
 				<a class="menu-top-order" href="#">Оформить заказ</a>				
-			</div>
-			
-		</div>
-		
+			</div>			
+		</div>		
 
 		<div class="header-menu-bottom">
 			<div class="menu-bottom-wrapper">
@@ -48,13 +51,13 @@
 
 				<nav class="menu-bottom-nav">
 					<ul>
-						<li><a href="index.html">Главная</a></li>
-			            <li><a href="#">Компания</a></li>
-			            <li><a href="catalog.html">Каталог</a></li>
-			            <li><a href="#">Новости</a></li>
-			            <li><a href="#">Спецпредложения</a></li>
-			            <li><a href="#">Доставка</a></li>
-			            <li><a href="#">Контакты</a></li>
+						<li><a class="menu-bottom-nav-link" href="index.html">Главная</a></li>
+			            <li><a class="menu-bottom-nav-link" href="#">Компания</a></li>
+			            <li><a class="menu-bottom-nav-link" href="catalog.html">Каталог</a></li>
+			            <li><a class="menu-bottom-nav-link" href="#">Новости</a></li>
+			            <li><a class="menu-bottom-nav-link" href="#">Спецпредложения</a></li>
+			            <li><a class="menu-bottom-nav-link" href="#">Доставка</a></li>
+			            <li><a class="menu-bottom-nav-link" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -102,7 +105,7 @@
 										<p>Настоящие мужские игрушки</p>
 									</div>
 								</div>
-								<a class="btn main-slide-btn" href="#">Открыть каталог</a>
+								<a class="btn main-slide-btn" href="catalog.html">Открыть каталог</a>
 							</div>
 
 							<div class="main-slide-slides-content">
@@ -111,7 +114,7 @@
 										<p>Соседям на радость!</p>
 									</div>
 								</div>
-								<a class="btn main-slide-btn" href="#">Открыть каталог</a>
+								<a class="btn main-slide-btn" href="catalog.html">Открыть каталог</a>
 							</div>							
 						</div>
 					</div>
@@ -260,7 +263,7 @@
 		<section class="main-aboutus">
 			<div class="main-aboutus-wrapper clearfix">
 				<div class="main-aboutus-detail">
-					<h2 class="main-aboutus-h2">Компания "Техномарт"</h2>
+					<h2 class="main-aboutus-h2">Компания «Техномарт»</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
 					<p>Мы можем доставить ваш товар в самые отдалнные точки России!<p>Техномарт работает со многими транспортными компаниями:</p>
 
@@ -276,8 +279,8 @@
 				<div class="main-aboutus-contacts">
 					<h2 class="main-aboutus-h2">Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a class="main-aboutus-map" onclick='showmap();'><img src="img/map.jpg" width="300" height="158" alt="map"></a>
-					<a class="btn main-aboutus-email" onclick='showemail();'>Заблудились? Напишите нам!</a>					
+					<a class="main-aboutus-map" onclick="showmap();"><img src="img/map.jpg" width="300" height="158" alt="map"></a>
+					<a class="btn main-aboutus-email" onclick="showemail();">Заблудились? Напишите нам!</a>					
 				</div>				
 			</div>
 		</section>		
@@ -314,7 +317,7 @@
 
 		<div class="footer-bottom">
 			<div class="footer-bottom-wrapper clearfix">				
-				<p class="footer-bottom-copyright">&copy; 2010-2017 Компания "Техномарт" Все права защищены</p>
+				<p class="footer-bottom-copyright">&copy; 2010-2017 Компания «Техномарт» Все права защищены</p>
 
 				<div class="footer-bottom-social">
 					<a class="btn-social btn-social-vk" href="http://vk.com"></a>
@@ -334,10 +337,11 @@
 	</footer>
 
 	<div class="modal-email-popup">
-		<button class="modal-popup-close" type="button" onclick='hidepopup();'></button>
+		<button class="modal-email-popup-close" type="button" onclick="hideemail();"></button>
 		<form id="email-popup-question" class="email-popup-form" action="#" method="POST">
 
-			<div class="email-popup-form-top">			
+			<div class="email-popup-form-top clearfix">			
+				
 				<label for="email-popup-name"><span>Ваше имя:</span>
 					<input type="text" id="email-popup-name" placeholder="Представьтесь, пожалуйста">
 				</label>
@@ -346,8 +350,15 @@
 					<input type="text" id="email-popup-email" placeholder="Для отправки ответа">
 				</label>
 
+<<<<<<< HEAD
+				<label for="email-popup-letter">
+					<span>Текст письма:</span>
+					<textarea id="email-popup-letter" placeholder="В свободной форме" rows="6"></textarea>
+				</label>
+=======
 				<span>Текст письма:</span>
-				<textarea id="email-popup-letter" placeholder="В свободной форме" cols="61" rows="6"></textarea>
+				<textarea id="email-popup-letter" placeholder="В свободной форме" rows="6"></textarea>
+>>>>>>> refs/remotes/128374-technomart/master
 			</div>
 
 			<div class="email-popup-submit">
@@ -358,7 +369,7 @@
 
 	
 	<div class="modal-map-popup">
-		<button class="modal-popup-close-map" type="button" onclick='hidemap();'></button>
+		<button class="modal-popup-close-map" type="button" onclick="hidemap();"></button>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2970419182997!2d30.3220211441057!3d59.938877484047545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1485281200649" allowfullscreen></iframe>
 	</div>
 
