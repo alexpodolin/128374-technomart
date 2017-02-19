@@ -269,7 +269,11 @@ body {
   color: #000000;
   text-decoration: none;
   background: #ffffff;
+<<<<<<< HEAD
   padding: 14px 26px;
+=======
+  padding: 13px 25px;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .bottom-middle-account-logon:hover, .bottom-middle-account-registration:hover {
   color: #ee3643;
@@ -290,6 +294,7 @@ body {
 .menu-bottom-nav li {
   display: inline-block;
   vertical-align: top;
+<<<<<<< HEAD
   min-width: 110px;
 }
 .menu-bottom-nav li:first-child {
@@ -297,6 +302,9 @@ body {
 }
 .menu-bottom-nav li:last-child {
   padding-right: 20px;
+=======
+  min-width: 125px;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .menu-bottom-nav-link {
   display: block;
@@ -384,7 +392,11 @@ body {
   content: "";
   position: absolute;
   top: 13px;
+<<<<<<< HEAD
   right: 11px;
+=======
+  right: 12px;
+>>>>>>> refs/remotes/128374-technomart/master
   width: 20px;
   height: 18px;    
   background: #FFFFFF url(../img/sprite.png) no-repeat -56px -130px;
@@ -393,7 +405,11 @@ body {
   content: "";
   position: absolute;
   top: 15px;
+<<<<<<< HEAD
   right: 11px;
+=======
+  right: 12px;
+>>>>>>> refs/remotes/128374-technomart/master
   width: 20px;
   height: 18px;    
   background: #FFFFFF url(../img/sprite.png) no-repeat -5px -5px;
@@ -402,7 +418,11 @@ body {
   content: "";
   position: absolute;
   top: 13px;
+<<<<<<< HEAD
   right: 11px;
+=======
+  right: 7px;
+>>>>>>> refs/remotes/128374-technomart/master
   width: 20px;
   height: 18px;    
   background: #FFFFFF url(../img/sprite.png) no-repeat -56px -130px;
@@ -640,7 +660,11 @@ body {
   color: #ffffff;
 }
 .main-title-text { 
+<<<<<<< HEAD
   padding: 26px 0 0 22px; 
+=======
+  padding: 25px 0 0 24px; 
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .main-title-text p {
   font-size: 18px;
@@ -651,7 +675,11 @@ body {
   margin: 5px 0 0 0;
 }
 .main-slide-btn {
+<<<<<<< HEAD
   margin: 102px 0 0 25px;
+=======
+  margin: 102px 0 0 26px;
+>>>>>>> refs/remotes/128374-technomart/master
   padding: 10px 48px;
   border-radius: 3px;
   float: left;
@@ -891,6 +919,12 @@ body {
 .main-slider-wrapper-block input { 
   display: none; 
 }
+<<<<<<< HEAD
+=======
+.main-slider-wrapper-block input { 
+  display: none; 
+}
+>>>>>>> refs/remotes/128374-technomart/master
 .main-slider-wrapper-toggle {
   float: left;
   margin: 70px 0 100px 0;
@@ -1054,7 +1088,11 @@ body {
 .main-aboutus-detail p:nth-child(3n) { 
   margin: 0;
 }
+<<<<<<< HEAD
 .main-aboutus-detail p::last-of-type  {
+=======
+.main-aboutus-detail p:last-child {
+>>>>>>> refs/remotes/128374-technomart/master
   margin: 0 0 23px 0;
 }
 .main-aboutus-detail ul {
@@ -1130,7 +1168,11 @@ body {
   font-family: "PT Sans", Arial, sans-serif; 
   text-decoration: none;
   text-transform: uppercase;
+<<<<<<< HEAD
   margin: 0 23px;
+=======
+  margin: 0 25px;
+>>>>>>> refs/remotes/128374-technomart/master
   position: relative;
 }
 .main-breadcrumbs a { 
@@ -1141,19 +1183,31 @@ body {
 .main-breadcrumbs:before {
   content: "";
   position: absolute;
+<<<<<<< HEAD
   left: -33px;
+=======
+  left: -31px;
+>>>>>>> refs/remotes/128374-technomart/master
   top: 3px;
   width: 15px;
   height: 12px;
   background: #ffffff url("../img/sprite.png") no-repeat -25px -105px;
 }
 .main-breadcrumbs li:nth-child(2n) { 
+<<<<<<< HEAD
   margin: 0px 13px; 
+=======
+  margin: 0px 11px; 
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .main-breadcrumbs li:first-child:before {
   content: "";
   position: absolute;
+<<<<<<< HEAD
   left: -27px;
+=======
+  left: -28px;
+>>>>>>> refs/remotes/128374-technomart/master
   top: 3px;
   width: 8px;
   height: 12px;
@@ -1169,12 +1223,20 @@ body {
   background: #ffffff url("../img/sprite.png") no-repeat -5px -34px;
 }
 .main-breadcrumbs li:last-child {
+<<<<<<< HEAD
   margin: 0 27px;
+=======
+  margin: 0 29px;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .main-breadcrumbs li:last-child:before {
   content: "";
   position: absolute;
+<<<<<<< HEAD
   left: -25px;
+=======
+  left: -24px;
+>>>>>>> refs/remotes/128374-technomart/master
   top: 3px;
   width: 8px;
   height: 12px;
@@ -1273,7 +1335,11 @@ body {
   text-align: center;
   box-sizing: border-box;
   padding: 11px 0;
+<<<<<<< HEAD
   margin: 0 13px 0 0;
+=======
+  margin: 0 12px 0 0;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .main-form-price-max {
   width: 94px;
@@ -1338,6 +1404,15 @@ body {
   background:#ffffff url("../img/spritesheet.png") no-repeat -6px -38px;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+.main-form-filter input[type="checkbox"]:checked + label:hover:before {
+  width: 27px;
+  height: 23px;
+  background:#ffffff url("../img/spritesheet.png") no-repeat -5px -38px;
+  cursor: pointer;
+}
+>>>>>>> refs/remotes/128374-technomart/master
 .main-form-filter input[type="radio"] {
   display: none;
 }
@@ -1374,6 +1449,10 @@ body {
   background: #ffffff url("../img/spritesheet.png") no-repeat -5px -75px;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/128374-technomart/master
 .main-form-filter fieldset:last-of-type {
   padding: 0 0 57px 0;
   margin: 18px 0 0 0;
@@ -1477,6 +1556,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 .main-catalog-paginator-active {
   color: #fef5f6;
   background: #ee3643;
@@ -1488,6 +1568,19 @@ body {
   color: #000;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+=======
+.main-catalog-paginator ul {
+  margin: 0;
+  padding: 0;
+}
+.main-catalog-paginator li {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-left: 3px;
+}
+.main-catalog-paginator li:first-child {
+  padding: 0 0 0 0;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .main-catalog-paginator-link {
   display: inline-block;
@@ -1499,6 +1592,7 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
+<<<<<<< HEAD
 .main-catalog-paginator-next {
   display: inline-block;
   vertical-align: baseline;
@@ -1512,6 +1606,20 @@ body {
   border: 1px solid #bdc6ca;
 }
 .main-catalog-paginator-link:active {
+=======
+.main-catalog-paginator a {
+  padding: 10px 17px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-catalog-paginator a:hover {
+  border: 1px solid #bdc6ca;
+}
+.main-catalog-paginator a:active {
+>>>>>>> refs/remotes/128374-technomart/master
   border: 1px solid #ee3643;
 }
 .main-about-product { 
@@ -1591,7 +1699,11 @@ body {
   width: 570px;  
 }
 .footer-top-site-nav ul { 
+<<<<<<< HEAD
   padding: 24px 0 0 20px; 
+=======
+  padding: 23px 0 0 20px; 
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .footer-top-site-nav li {
   list-style: none;
@@ -1603,7 +1715,11 @@ body {
   padding: 0; 
 }
 .footer-top-site-nav li:last-child { 
+<<<<<<< HEAD
   padding: 0 0 0 52px; 
+=======
+  padding: 0 0 0 49px; 
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .footer-top-site-nav a {
   font-size: 18px;
@@ -1630,11 +1746,19 @@ body {
   list-style: none;
   display: inline-block;
   vertical-align: top;
+<<<<<<< HEAD
   padding: 0 0 0 55px;
 }
 .footer-top-shop-nav li:first-child { 
   padding: 0; 
 }
+=======
+  padding: 0 0 0 54px;
+}
+.footer-top-shop-nav li:first-child { 
+  padding: 0; 
+}
+>>>>>>> refs/remotes/128374-technomart/master
 .footer-top-shop-nav a {
   font-size: 18px;
   line-height: 24px;
@@ -1748,6 +1872,7 @@ body {
   background: #ffffff url("../img/cross.png") no-repeat;
 }
 .email-popup-form-top { 
+<<<<<<< HEAD
   margin: 20px 80px 0 80px;
 }
 .modal-email-popup label { 
@@ -1760,6 +1885,12 @@ body {
 }
 .modal-email-popup label:last-child {
   margin: 35px 0 0 0;
+=======
+  margin: 20px 80px 0 80px; width: 460px; 
+}
+.modal-email-popup label { 
+  float: left; 
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .modal-email-popup span {
   display: block;
@@ -1775,6 +1906,12 @@ body {
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
+<<<<<<< HEAD
+=======
+.modal-email-popup label:last-of-type input[type=text] {
+  margin-right: 0;
+}
+>>>>>>> refs/remotes/128374-technomart/master
 .modal-email-popup textarea {
   font-size: 13px;
   line-height: 18px;
@@ -1785,7 +1922,11 @@ body {
   border: 2px solid #d7dcde;
   resize: none;
   box-sizing: border-box;
+<<<<<<< HEAD
   width: 460px;
+=======
+  width: 100%
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .email-popup-submit {
   padding: 33px 0;
@@ -1834,7 +1975,11 @@ body {
   margin: 10px 10px;
   width: 21px;
   height: 21px;
+<<<<<<< HEAD
   background: transparent url("../img/cross.png") no-repeat;
+=======
+  background: #ffffff url("../img/cross.png") no-repeat;
+>>>>>>> refs/remotes/128374-technomart/master
 }
 .modal-add-product {
   width: 620px;
